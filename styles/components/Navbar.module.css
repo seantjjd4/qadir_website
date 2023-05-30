@@ -3,6 +3,8 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    font-size: 0.95rem;
     width: 100%;
     z-index: 3;
+    padding: 2rem;
 }
