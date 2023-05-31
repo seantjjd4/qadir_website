@@ -1,14 +1,16 @@
 import styles from '@/styles/About.module.css'
 
-import Navbar from '@/components/navbar.js'
+import Navbar from '@/components/navbar'
+import Footer from '@/components/footer'
 
 export default function About() {
     return (
         <>
+            <Navbar/>
             <main className={styles.main}>
-                <Navbar/>
                 <div>Contact Us</div>
             </main>
+            <Footer/>
         </>
     )
 }
