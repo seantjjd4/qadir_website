@@ -7,7 +7,7 @@ export default function About() {
         <>
             <main className={styles.main}>
                 <Navbar/>
-                <div>nothing yet...</div>
+                <div>Contact Us</div>
             </main>
         </>
     )

@@ -5,6 +5,7 @@ import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 
 import Navbar from '@/components/navbar.js'
+import Footer from '@/components/footer.js'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,11 +18,11 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Navbar/>
       <main className={`${styles.main} ${inter.className}`}>
-        <Navbar/>
         <div className={styles.description}>
           <Link className={styles.description_link} href={"/"}>
-            QADIR CORPORATION
+            QADIR CORP
           </Link>
           <Image
             src="/qadircorp.png"
@@ -35,11 +36,23 @@ export default function Home() {
 
         <div className={styles.center}>
           <Image
-            className={styles.logo}
-            src="/next.svg"
-            alt="Next.js Logo"
-            width={180}
-            height={37}
+            className={styles.left_icon}
+            src="/robotics_icon1.png"
+            alt="Robotics Icon"
+            width={80}
+            height={80}
+            priority
+          />
+          <div className={styles.titleBlock}>
+            <p className={styles.title}>Qadir Corporation</p>
+            <p className={styles.subtitle}>Design For The Future</p>
+          </div>
+          <Image
+            className={styles.right_icon}
+            src="/robotics_icon.png"
+            alt="Robotics Icon"
+            width={80}
+            height={80}
             priority
           />
         </div>
@@ -103,6 +116,7 @@ export default function Home() {
           </a>
         </div>
       </main>
+      <Footer/>
     </>
   )
 }
