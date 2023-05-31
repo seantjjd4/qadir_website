@@ -20,19 +20,9 @@ export default function Home() {
       </Head>
       <Navbar/>
       <main className={`${styles.main} ${inter.className}`}>
-        <div className={styles.description}>
-          <Link className={styles.description_link} href={"/"}>
-            QADIR CORP
-          </Link>
-          <Image
-            src="/qadircorp.png"
-            alt="Qadir Logo"
-            className={styles.vercelLogo}
-            width={180}
-            height={60}
-            priority
-          />
-        </div>
+        <Link className={styles.home_link} href={"/"}>
+          QADIR CORP
+        </Link>
 
         <div className={styles.center}>
           <Image
@@ -58,19 +48,17 @@ export default function Home() {
         </div>
 
         <div className={styles.grid}>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+          <Link
+            href="/about"
             className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
           >
             <h2>
-              Docs <span>-&gt;</span>
+              About <span>-&gt;</span>
             </h2>
             <p>
-              Find in-depth information about Next.js features and&nbsp;API.
+              More about Qadir Corporation and members!
             </p>
-          </a>
+          </Link>
 
           <a
             href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
