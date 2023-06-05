@@ -4,8 +4,9 @@ import Link from 'next/link'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 
-import Navbar from '@/components/navbar.js'
-import Footer from '@/components/footer.js'
+import Navbar from '@/components/navbar'
+import Footer from '@/components/footer'
+import Homelink from '@/components/homelink'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -20,9 +21,7 @@ export default function Home() {
       </Head>
       <Navbar/>
       <main className={`${styles.main} ${inter.className}`}>
-        <Link className={styles.home_link} href={"/"}>
-          QADIR CORP
-        </Link>
+        <Homelink/>
 
         <div className={styles.center}>
           <Image
@@ -60,48 +59,29 @@ export default function Home() {
             </p>
           </Link>
 
-          <a
-            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+          <Link
+            href="/about"
             className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
           >
             <h2>
-              Learn <span>-&gt;</span>
+              Service <span>-&gt;</span>
             </h2>
             <p>
-              Learn about Next.js in an interactive course with&nbsp;quizzes!
+              More about Qadir Corporation and members!
             </p>
-          </a>
+          </Link>
 
-          <a
-            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+          <Link
+            href="/about"
             className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
           >
             <h2>
-              Templates <span>-&gt;</span>
+              Past Cases <span>-&gt;</span>
             </h2>
             <p>
-              Discover and deploy boilerplate example Next.js&nbsp;projects.
+              More about Qadir Corporation and members!
             </p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2>
-              Deploy <span>-&gt;</span>
-            </h2>
-            <p>
-              Instantly deploy your Next.js site to a shareable URL
-              with&nbsp;Vercel.
-            </p>
-          </a>
+          </Link>
         </div>
       </main>
       <Footer/>

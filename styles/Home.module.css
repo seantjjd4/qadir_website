@@ -1,27 +1,17 @@
 .main {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   padding: 0 6rem;
-  min-height: 85vh;
-}
-
-.home_link {
-  top: 0;
-  margin: 0;
-  font-size: 1.1rem;
-  font-weight: bold;
-  font-family: var(--font-mono);
-  padding: 1rem;
-  background-color: rgba(var(--callout-rgb), 0.5);
-  border: 1px solid rgba(var(--callout-border-rgb), 0.3);
-  border-radius: var(--border-radius);
+  min-height: 120vh;
+  max-width: 100vw;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(25%, auto));
+  grid-template-columns: repeat(3, minmax(33%, auto));
   width: var(--max-width);
   max-width: 100%;
 }
@@ -66,12 +56,12 @@
   background: var(--secondary-glow);
   border-radius: 50%;
   position: absolute;
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   top: 0;
   left: 0;
   filter: blur(50px);
-  animation: glowwing 4s ease-in-out 0s infinite alternate both;
+  animation: glowwing 3s ease-in-out 0s infinite alternate both;
 }
 
 .titleBlock {
@@ -95,13 +85,13 @@
 
 .left_icon {
   position: absolute;
-  left: -50%;
+  left: -15%;
   animation: left_in 2s ease-out 0.5s 1 normal forwards;
 }
 
 .right_icon {
   position: absolute;
-  right: -50%;
+  right: -15%;
   animation: right_in 2s ease-out 0.5s 1 normal forwards;
 }
 
@@ -239,7 +229,7 @@
 
 @keyframes left_in {
   from {
-    left: -50%;
+    left: -50vw;
   }
   to {
     left: -15%;
@@ -248,7 +238,7 @@
 
 @keyframes right_in {
   from {
-    right: -50%;
+    right: -50vw;
   }
   to {
     right: -15%;
