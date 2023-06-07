@@ -8,7 +8,7 @@
     max-width: 100vw;
   }
 
-.title {
+.big_title {
   padding: 2rem;
   font-size: 3.5rem;
   width: 100%;
@@ -30,30 +30,56 @@
 }
 
 .box_image {
-  width: 40%;
+  width: 30%;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  
 }
 
 .box_text {
-  width: 60%;
+  width: 70%;
 }
 
-.box_title {
+.title {
   font-size: 2rem;
   padding: 1rem;
   font-weight: bolder;
   font-style: italic;
 }
 
-.box_description {
+.description {
+  font-size: 1.1rem;
   color: #555555;
 }
 
 .robot_line {
   position: relative;
   width: 100%;
-  height: calc();
+  height: auto;
+  min-height: 100px;
+}
+
+.article {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+}
+
+.article .title {
+  width: 37%;
+  text-align: center;
+}
+
+.article .description {
+  width: 63%;
+}
+
+.vision {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
 }

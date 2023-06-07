@@ -21,7 +21,7 @@ export default function Home() {
       </Head>
       <Navbar/>
       <main className={`${styles.main} ${inter.className}`}>
-        <Homelink/>
+        <Homelink linkname="Qadir Corp"/>
 
         <div className={styles.center}>
           <Image
