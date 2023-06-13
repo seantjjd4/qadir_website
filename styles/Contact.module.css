@@ -1,0 +1,98 @@
+.page {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.main {
+    height: calc(100vh - 5rem - 15vh);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.canvas {
+    position: absolute;
+    background-color: #888888;
+    top: 10vh;
+    left: 20vw;
+    width: 35vw;
+    height: 50vh;
+}
+
+.title {
+    padding: 2rem;
+    font-size: 3.5rem;
+    width: 100%;
+    min-height: 200px;
+}
+
+.companyInfo {
+    z-index: 0;
+}
+
+.companyInfo::before {
+    content: "";
+    position: absolute;
+    width: calc(50% + 4rem);
+    height: calc(100% + 4rem);
+    background-color: rgba(180, 180, 180, 0.5);
+    border-radius: var(--border-radius);
+    top: -4rem;
+    left: -4rem;
+    z-index: -1;
+}
+
+.companyInfo h2 {
+    font-size: 2rem;
+}
+
+.companyInfo p {
+    padding-top: 1rem;
+}
+
+.link {
+    display: inline-block;
+    animation-name: bounce;
+    animation-timing-function: ease;
+}
+
+.link:hover {
+    color: #775300;
+    text-decoration: underline;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+
+.googleMap {
+    padding-left: 2rem;
+    z-index: -1;
+}
+
+.googleMap::before {
+    content: "";
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: var(--border-radius);
+    width: calc(50% + 4rem);
+    height: calc(100% + 4rem);
+    bottom: -2rem;
+    right: -2rem;
+    z-index: -2;
+}
+
+/* animation */
+@keyframes bounce {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-8px); }
+    100% { transform: translateY(0); }
+  }

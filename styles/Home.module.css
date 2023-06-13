@@ -81,6 +81,7 @@
 .subtitle {
   font-family: fantasy, monospace;
   font-size: 1.5rem;
+  color: #af8f00;
 }
 
 .left_icon {
@@ -207,6 +208,7 @@
   }
 }
 
+/* animation */
 @keyframes rotate {
   from {
     transform: rotate(360deg);
