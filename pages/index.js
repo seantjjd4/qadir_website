@@ -6,11 +6,12 @@ import styles from '@/styles/Home.module.css'
 
 import Navbar from '@/components/navbar'
 import Footer from '@/components/footer'
-import Homelink from '@/components/homelink'
+import Toplink from '@/components/toplink'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+
   return (
     <>
       <Head>
@@ -21,9 +22,9 @@ export default function Home() {
       </Head>
       <Navbar/>
       <main className={`${styles.main} ${inter.className}`}>
-        <Homelink linkname="Qadir Corp"/>
+        <Toplink links={[{name: "Qadir Corp", path: "/"}]}/>
 
-        <div className={styles.center}>
+        <div className={`${styles.center} ${styles.glow}`}>
           <Image
             className={styles.left_icon}
             src="/robotics_icon1.png"
@@ -60,7 +61,7 @@ export default function Home() {
           </Link>
 
           <Link
-            href="/about"
+            href="/service"
             className={styles.card}
           >
             <h2>
@@ -72,7 +73,7 @@ export default function Home() {
           </Link>
 
           <Link
-            href="/about"
+            href="/cases"
             className={styles.card}
           >
             <h2>
@@ -82,6 +83,24 @@ export default function Home() {
               More about Qadir Corporation and members!
             </p>
           </Link>
+        </div>
+        <div className={styles.introduction}>
+          Qadir, with World Leading Idea, <br/>
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br/>
+          Tellus elementum sagittis vitae et leo duis. Nec dui nunc mattis enim ut.
+        </div>
+        <div className={styles.center}>
+          <video className={styles.video} src="/covervideo.mp4" autoPlay loop muted>
+            <p>你的瀏覽器不支援 HTML 5 video</p>
+          </video>
+          <div className={styles.description}>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <Link href="/cases" className={styles.casesLink}>Learn More...</Link>
+          </div>
         </div>
       </main>
       <Footer/>

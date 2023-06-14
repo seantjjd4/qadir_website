@@ -1,10 +1,6 @@
-.page {
-    height: 100vh;
-    overflow: hidden;
-}
-
 .main {
-    height: calc(100vh - 5rem - 15vh);
+    height: 75vh;
+    min-height: 600px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;

@@ -3,14 +3,16 @@ import styles from '@/styles/About.module.css'
 
 import Navbar from '@/components/navbar'
 import Footer from '@/components/footer'
-import Homelink from '@/components/homelink'
+import Toplink from '@/components/toplink'
 
 export default function About() {
+    const links = [{"name": "About Qadir", "path": "/about"}, {"name": "Member", "path": "/about/member"}]
+
     return (
         <>
             <Navbar/>
             <main className={styles.main}>
-                <Homelink linkname={"About Qadir"}/>
+                <Toplink links={links}/>
                 <h1 className={styles.big_title}>About Us</h1>
                 <div className={styles.box}>
                     <div className={styles.box_image}>

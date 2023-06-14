@@ -10,12 +10,13 @@
     padding: 1rem 0;
   }
   
-  .home_link {
+  .top_link {
     font-size: 1.1rem;
     font-weight: bold;
     font-family: var(--font-mono);
     padding: 1rem;
-    background-color: rgba(var(--callout-rgb), 0.5);
+    margin: 0 0.5rem;
+    background-color: rgba(var(--callout-rgb), 0.6);
     border: 1px solid rgba(var(--callout-border-rgb), 0.3);
     border-radius: var(--border-radius);
     z-index: 10;
