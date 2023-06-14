@@ -6,7 +6,12 @@ import Navbar from '@/components/navbar'
 import Footer from '@/components/footer'
 import Toplink from '@/components/toplink'
 
+import { getAllCases } from '@/data/caseData'
+
 export default function Cases() {
+
+    const cases = getAllCases();
+
     return (
         <>
             <Navbar/>
@@ -14,6 +19,31 @@ export default function Cases() {
                 <Toplink links={[{name: "Cases", path: "/cases"}]} />
                 <h1 className={styles.page_title}>Interesting Cases</h1>
                 <div className={styles.grid}>
+                    {cases.map((singleCase) => {
+                        return (
+                            <Link
+                                href="/cases/[id]"
+                                as={`/cases/${singleCase.id}`}
+                                key={singleCase.id}
+                                className={styles.card}
+                            >
+                                <Image
+                                    className={styles.card_pic}
+                                    src="/case1.jpeg"
+                                    alt="Robotics Icon"
+                                    width={160}
+                                    height={90}
+                                    priority
+                                />
+                                <h2>
+                                    Automotive brake caliper inspection system
+                                </h2>
+                                <p>
+                                    aliquet nibh praesent tristique magna sit amet purus gravida quis...
+                                </p>
+                            </Link>
+                        );
+                    })}
                     <Link
                         href="/cases/[id]"
                         as="/cases/1"
