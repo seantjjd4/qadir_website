@@ -21,6 +21,8 @@ export default function Homelink({ links }) {
     else router.push(link.path);
   }
 
+  console.log(router.query);
+
   return (
     <div className={styles.box}>
       {links.map((link, index) => {

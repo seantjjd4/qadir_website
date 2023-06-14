@@ -1,4 +1,4 @@
-import styles from '@/styles/About.module.css'
+import styles from '@/styles/Service.module.css'
 
 import Navbar from '@/components/navbar'
 import Footer from '@/components/footer'

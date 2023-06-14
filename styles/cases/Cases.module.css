@@ -1,0 +1,32 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 6rem;
+    min-height: 75vh;
+    max-width: 100vw;
+}
+
+.page_title {
+    font-size: 3.5rem;
+    margin: 5rem;
+}
+
+.grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, minmax(20%, 33%));
+    column-gap: 2rem;
+    row-gap: 4rem;
+}
+
+.card {
+    padding: 0.5rem;
+}
+
+.card_pic {
+    width: 100%;
+    height: auto;
+    border-radius: var(--border-radius);
+}

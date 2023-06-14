@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import styles from '@/styles/About.module.css'
+import styles from '@/styles/about/About.module.css'
 
 import Navbar from '@/components/navbar'
 import Footer from '@/components/footer'

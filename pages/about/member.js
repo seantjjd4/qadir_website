@@ -1,4 +1,4 @@
-import styles from '@/styles/Member.module.css'
+import styles from '@/styles/about/Member.module.css'
 
 import Navbar from '@/components/navbar'
 import Footer from '@/components/footer'
