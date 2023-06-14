@@ -13,7 +13,7 @@ export default function About() {
             <Navbar/>
             <main className={styles.main}>
                 <Toplink links={links}/>
-                <h1 className={styles.big_title}>About Us</h1>
+                <h1 className={styles.page_title}>About Us</h1>
                 <div className={styles.box}>
                     <div className={styles.box_image}>
                         <Image

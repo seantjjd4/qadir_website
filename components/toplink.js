@@ -23,16 +23,13 @@ export default function Homelink({ links }) {
 
   return (
     <div className={styles.box}>
-      {links.map((link) => {
+      {links.map((link, index) => {
         return (
-          <button onClick={() => {clickLink(link)}} className={styles.top_link}>
+          <button onClick={() => {clickLink(link)}} className={styles.top_link} key={index}>
             {link.name}
           </button>
         )
       })}
-      {/* <button onClick={scrollToTop} className={styles.top_link}>
-        {router.pathname}
-      </button> */}
     </div>
   );
 }

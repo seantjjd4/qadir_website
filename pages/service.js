@@ -3,7 +3,7 @@ import styles from '@/styles/About.module.css'
 import Navbar from '@/components/navbar'
 import Footer from '@/components/footer'
 
-export default function About() {
+export default function Service() {
     return (
         <>
             <Navbar/>

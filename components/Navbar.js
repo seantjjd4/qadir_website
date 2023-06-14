@@ -6,9 +6,9 @@ const navigationRoutes = [{"name": "Home", "path": "/"}, {"name": "About", "path
 export default function Navbar() {
     return (
         <nav className={styles.nav}>
-            {navigationRoutes.map((singleRoute) => {
+            {navigationRoutes.map((singleRoute, index) => {
                 return (
-                    <Link className={styles.navlink} href={`${singleRoute['path']}`}>
+                    <Link className={styles.navlink} href={`${singleRoute['path']}`} key={index}>
                         <div className={styles.navtext}>
                             {singleRoute['name']}
                         </div>

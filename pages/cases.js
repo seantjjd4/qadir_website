@@ -3,12 +3,12 @@ import styles from '@/styles/About.module.css'
 import Navbar from '@/components/navbar'
 import Footer from '@/components/footer'
 
-export default function About() {
+export default function Cases() {
     return (
         <>
             <Navbar/>
             <main className={styles.main}>
-                <div>nothing yet...</div>
+                <div></div>
             </main>
             <Footer/>
         </>

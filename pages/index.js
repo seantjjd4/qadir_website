@@ -68,7 +68,7 @@ export default function Home() {
               Service <span>-&gt;</span>
             </h2>
             <p>
-              More about Qadir Corporation and members!
+              Learn more about Qadir Corporation's Service!
             </p>
           </Link>
 
@@ -80,7 +80,7 @@ export default function Home() {
               Past Cases <span>-&gt;</span>
             </h2>
             <p>
-              More about Qadir Corporation and members!
+              Take a look about interesting product we done!
             </p>
           </Link>
         </div>
