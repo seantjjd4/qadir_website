@@ -4,13 +4,14 @@
     justify-content: flex-start;
     align-items: center;
     padding: 0 6rem;
+    padding-bottom: 3rem;
     min-height: 75vh;
     max-width: 100vw;
 }
 
 .page_title {
     font-size: 3.5rem;
-    margin: 5rem;
+    margin: 4rem;
 }
 
 .grid {
@@ -23,10 +24,41 @@
 
 .card {
     padding: 0.5rem;
+    position: relative;
+    border-radius: var(--border-radius);
+    background: rgba(var(--card-rgb), 0);
+    border: 1px solid rgba(var(--card-border-rgb), 0);
+    transition: background 200ms, border 200ms, color 200ms;
+}
+
+.card::after {
+    content: "Learn more...";
+    position: absolute;
+    right: 0.5rem;
+    bottom: 0.5rem;
+    color: rgba(55,55,55,0);
 }
 
 .card_pic {
     width: 100%;
     height: auto;
     border-radius: var(--border-radius);
+}
+
+.title {
+    font-size: 1.5rem;
+}
+
+.description {
+    padding: 0.3rem;
+    color: var(--box-rgb);
+}
+
+.card:hover {
+    background: rgba(var(--card-rgb), 0.1);
+    border: 1px solid rgba(var(--card-border-rgb), 0.15);
+}
+
+.card:hover::after {
+    color: rgba(55,55,55,0.5);
 }

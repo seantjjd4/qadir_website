@@ -1,4 +1,4 @@
-import {useRouter} from 'next/router';
+import {useRouter} from 'next/router'
 
 import styles from '@/styles/components/Toplink.module.css'
 
@@ -20,8 +20,6 @@ export default function Homelink({ links }) {
     if (router.pathname == link.path) scrollToTop();
     else router.push(link.path);
   }
-
-  console.log(router.query);
 
   return (
     <div className={styles.box}>

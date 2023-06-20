@@ -5,6 +5,7 @@
   justify-content: flex-start;
   align-items: center;
   padding: 0 6rem;
+  padding-bottom: 3rem;
   min-height: 75vh;
   max-width: 100vw;
 }

@@ -29,121 +29,21 @@ export default function Cases() {
                             >
                                 <Image
                                     className={styles.card_pic}
-                                    src="/case1.jpeg"
+                                    src={singleCase.src}
                                     alt="Robotics Icon"
                                     width={160}
                                     height={90}
                                     priority
                                 />
-                                <h2>
-                                    Automotive brake caliper inspection system
+                                <h2 className={styles.title}>
+                                    {singleCase.title}
                                 </h2>
-                                <p>
-                                    aliquet nibh praesent tristique magna sit amet purus gravida quis...
+                                <p className={styles.description}>
+                                    {singleCase.description.slice(0, 80)}<span>...</span>
                                 </p>
                             </Link>
                         );
                     })}
-                    <Link
-                        href="/cases/[id]"
-                        as="/cases/1"
-                        className={styles.card}
-                    >
-                        <Image
-                            className={styles.card_pic}
-                            src="/case1.jpeg"
-                            alt="Robotics Icon"
-                            width={160}
-                            height={90}
-                            priority
-                        />
-                        <h2>
-                            Automotive brake caliper inspection system
-                        </h2>
-                        <p>
-                            aliquet nibh praesent tristique magna sit amet purus gravida quis...
-                        </p>
-                    </Link>
-                    <Link
-                        href="/cases/[id]"
-                        as="/cases/2"
-                        className={styles.card}
-                    >
-                        <Image
-                            className={styles.card_pic}
-                            src="/case1.jpeg"
-                            alt="Robotics Icon"
-                            width={160}
-                            height={90}
-                            priority
-                        />
-                        <h2>
-                            Automotive brake caliper inspection system
-                        </h2>
-                        <p>
-                            aliquet nibh praesent tristique magna sit amet purus gravida quis...
-                        </p>
-                    </Link>
-                    <Link
-                        href="/cases/[id]"
-                        as="/cases/3"
-                        className={styles.card}
-                    >
-                        <Image
-                            className={styles.card_pic}
-                            src="/case1.jpeg"
-                            alt="Robotics Icon"
-                            width={160}
-                            height={90}
-                            priority
-                        />
-                        <h2>
-                            Automotive brake caliper inspection system
-                        </h2>
-                        <p>
-                            aliquet nibh praesent tristique magna sit amet purus gravida quis...
-                        </p>
-                    </Link>
-                    <Link
-                        href="/cases/[id]"
-                        as="/cases/4"
-                        className={styles.card}
-                    >
-                        <Image
-                            className={styles.card_pic}
-                            src="/case1.jpeg"
-                            alt="Robotics Icon"
-                            width={160}
-                            height={90}
-                            priority
-                        />
-                        <h2>
-                            Automotive brake caliper inspection system
-                        </h2>
-                        <p>
-                            aliquet nibh praesent tristique magna sit amet purus gravida quis...
-                        </p>
-                    </Link>
-                    <Link
-                        href="/cases/[id]"
-                        as="/cases/5"
-                        className={styles.card}
-                    >
-                        <Image
-                            className={styles.card_pic}
-                            src="/case1.jpeg"
-                            alt="Robotics Icon"
-                            width={160}
-                            height={90}
-                            priority
-                        />
-                        <h2>
-                            Automotive brake caliper inspection system
-                        </h2>
-                        <p>
-                            aliquet nibh praesent tristique magna sit amet purus gravida quis...
-                        </p>
-                    </Link>
                 </div>
             </main>
             <Footer/>
