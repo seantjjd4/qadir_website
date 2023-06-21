@@ -12,3 +12,173 @@
     font-size: 3.5rem;
     margin: 5rem;
 }
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(25%, 30%));
+    column-gap: 2rem;
+    row-gap: 4rem;
+    width: 100%;
+    margin: 2rem 0;
+}
+
+.box {
+    text-align: center;
+}
+
+.box:hover .service_pic {
+    opacity: 1;
+}
+
+.box:hover .service_description {
+    opacity: 1;
+}
+
+.service_pic {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    opacity: 0.7;
+    transition: opacity 500ms;
+}
+
+.service_title {
+    padding: 1rem;
+}
+
+.service_description {
+    color: #555555;
+    padding: 0 0.8rem;
+    opacity: 0.7;
+    transition: opacity 500ms;
+}
+
+.horizonline {
+    width: 100%;
+    border-top: 2px dotted #999999;
+    margin: 3rem 0;
+}
+
+.area {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 2rem 0;
+}
+
+.img_area {
+    width: 50%;
+    height: auto;
+    position: relative;
+}
+
+.area_pic {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: auto;
+    height: 26%;
+    max-height: 210px;
+    max-width: 80%;
+    border-radius: var(--border-radius);
+}
+
+.pic1 {
+    transform: translate(-60%, 10%);
+}
+
+.pic2 {
+    transform: translate(-40%, 100%);
+}
+
+.pic3 {
+    transform: translate(-60%, 190%);
+}
+
+.pic4 {
+    transform: translate(-40%, 280%);
+}
+
+.content_area {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    width: 50%;
+    padding: 1rem;
+    line-height: 1.2;
+}
+
+.subtitle {
+    padding: 1rem 0;
+    font-size: 2rem;
+    align-self: flex-start;
+    text-decoration: underline;
+}
+
+.area_box {
+    padding: 0.5rem 0;
+}
+
+.area_title {
+    font-size: 1.5rem;
+    padding: 0.5rem 0;
+}
+
+.area_description {
+    color: #555555;
+}
+
+
+/* Mobile */
+@media (max-width: 700px) {
+
+    .main {
+        padding: 0 3rem;
+    }
+
+    .area {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 2rem 0;
+    }
+
+    .img_area {
+        width: 100%;
+    }
+
+    .area_pic {
+        position: relative;
+        width: 100%;
+        height: auto;
+        border-radius: var(--border-radius);
+    }
+
+    .pic1 {
+        transform: translate(-50%, 0%);
+    }
+
+    .pic2 {
+        transform: translate(-50%, 0%);
+    }
+
+    .pic3 {
+        transform: translate(-50%, 0%);
+    }
+
+    .pic4 {
+        transform: translate(-50%, 0%);
+    }
+
+    .content_area {
+        width: 100%;
+    }
+}

@@ -18,7 +18,7 @@
     display: grid;
     width: 100%;
     grid-template-columns: repeat(3, minmax(20%, 33%));
-    column-gap: 2rem;
+    column-gap: 4rem;
     row-gap: 4rem;
 }
 
@@ -54,6 +54,11 @@
     color: var(--box-rgb);
 }
 
+.arrow {
+    display: inline-block;
+    transition: transform 200ms;
+}
+
 .card:hover {
     background: rgba(var(--card-rgb), 0.1);
     border: 1px solid rgba(var(--card-border-rgb), 0.15);
@@ -61,4 +66,8 @@
 
 .card:hover::after {
     color: rgba(55,55,55,0.5);
+}
+
+.card:hover .arrow {
+    transform: translateX(200%);
 }

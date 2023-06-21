@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import { Inter } from 'next/font/google'
 import styles from '@/styles/cases/Cases.module.css'
 
 import Navbar from '@/components/navbar'
@@ -7,6 +8,8 @@ import Footer from '@/components/footer'
 import Toplink from '@/components/toplink'
 
 import { getAllCases } from '@/data/caseData'
+
+const inter = Inter({ subsets: ['latin'] })
 
 export default function Cases() {
 
@@ -41,6 +44,7 @@ export default function Cases() {
                                 <p className={styles.description}>
                                     {singleCase.description.slice(0, 80)}<span>...</span>
                                 </p>
+                                <p className={`${styles.arrow} ${inter.className}`}>-&gt;</p>
                             </Link>
                         );
                     })}
