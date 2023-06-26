@@ -100,6 +100,14 @@
   animation: right_in 2s ease-out 0.5s 1 normal forwards;
 }
 
+.cases_box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+}
+
 .video {
   width: 45%;
   max-width: 450px;
@@ -160,13 +168,17 @@
 
 /* Mobile */
 @media (max-width: 700px) {
+  .main {
+    padding: 0 3rem;
+    padding-bottom: 3rem;
+  }
+
   .content {
     padding: 4rem;
   }
 
   .grid {
     grid-template-columns: 1fr;
-    margin-bottom: 120px;
     max-width: 320px;
     text-align: center;
   }
@@ -180,12 +192,33 @@
   }
 
   .center {
-    padding: 8rem 0 6rem;
+    padding: 2rem 0;
   }
 
   .center::before {
     transform: none;
     height: 300px;
+  }
+
+  .introduction {
+    margin: 3rem 0;
+  }
+
+  .cases_box {
+    flex-direction: column;
+    padding: 2rem 0;
+  }
+
+  .video {
+    width: 100%;
+  }
+
+  .description {
+    width: 100%;
+  }
+
+  .description p {
+    margin: 2rem 0 0;
   }
 }
 

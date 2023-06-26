@@ -52,3 +52,16 @@
   font-size: 0.5em;
 }
 
+@media (max-width: 700px) {
+  .footer {
+    height: auto;
+  }
+
+  .companyInfo {
+    padding: 1rem 0;
+  }
+
+  .contactInfo {
+    padding: 1rem 0;
+  }
+}

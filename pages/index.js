@@ -89,7 +89,7 @@ export default function Home() {
           sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br/>
           Tellus elementum sagittis vitae et leo duis. Nec dui nunc mattis enim ut.
         </div>
-        <div className={styles.center}>
+        <div className={styles.cases_box}>
           <video className={styles.video} src="/covervideo.mp4" autoPlay loop muted>
             <p>你的瀏覽器不支援 HTML 5 video</p>
           </video>
