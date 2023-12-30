@@ -37,6 +37,12 @@
     margin: 0 3rem;
 }
 
+.box_title {
+    color: gray;
+    font-style: italic;
+    margin: 0 0 1rem 0;
+}
+
 @media (max-width: 700px) {
     .main {
         padding: 0 3rem;

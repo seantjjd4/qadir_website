@@ -29,7 +29,8 @@ export default function About() {
                                 priority
                             />
                             <div className={styles.box}>
-                                <h2 className={styles.box_title}>{member.name}</h2>
+                                <h2 className={styles.box_name}>{member.name}</h2>
+                                <p className={styles.box_title}>{member.title}</p>
                                 <p className={styles.box_description}>{member.description}</p>
                             </div>
                         </div>
